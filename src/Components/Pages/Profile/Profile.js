@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../../../assets/Layer 1 1 (1).png'
-import img2 from '../../../assets/Rectangle 16 (1).png'
-import img3 from '../../../assets/Vector.png'
+import img1 from '../../../assets/profile-girl.png';
+import img2 from '../../../assets/visit.png';
+import img3 from '../../../assets/plane.png';
 
 const Profile = () => {
     return (
