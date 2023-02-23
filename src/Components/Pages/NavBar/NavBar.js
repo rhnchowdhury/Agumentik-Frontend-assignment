@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import img from '../../../assets/title.png';
 
 const NavBar = () => {
     const menuItems = <React.Fragment>
         <li><Link to='/booking'>Find Reservations</Link></li>
-        <li><Link>Packages
+        <li><Link to='/'>Packages
             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
         </Link></li>
-        <li><Link>About Lakshadweep
+        <li><Link to='/'>About Lakshadweep
             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
         </Link></li>
-        <li><Link>About Us</Link></li>
-        <li><Link>Gol</Link></li>
+        <li><Link to='/'>About Us</Link></li>
+        <li><Link to='/'>Gol</Link></li>
         <li><Link to='/support'>Support</Link></li>
     </React.Fragment>
     return (
@@ -26,7 +27,9 @@ const NavBar = () => {
                             {menuItems}
                         </ul>
                     </div>
-                    <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+                    <Link to='/' className="btn btn-ghost normal-case text-xl">
+                        <img src={img} alt="" />
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -34,8 +37,8 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link className='mr-3' style={{ color: '#3282AD' }}>Login</Link>
-                    <Link className="badge p-5" style={{ backgroundColor: '#3282AD', border: '1px solid #3282AD' }}>Sign Up</Link>
+                    <Link to='/' className='mr-3' style={{ color: '#3282AD' }}>Login</Link>
+                    <Link to='/' className="badge p-5" style={{ backgroundColor: '#3282AD', border: '1px solid #3282AD' }}>Sign Up</Link>
                 </div>
             </div>
         </div>
