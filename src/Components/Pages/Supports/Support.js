@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from '../../../assets/support.png';
 import img2 from '../../../assets/girl.png';
+import img3 from '../../../assets/map.png';
 import { BiSearch } from "react-icons/bi";
 import { IoMdContact } from "react-icons/io";
 import { FaPhoneSquareAlt } from "react-icons/fa";
@@ -59,22 +60,55 @@ const Support = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h1 className='text-center text-2xl font-bold'>Contact Us</h1>
-                    <p className='text-center'>Any question or remarks? Just write us a message!</p>
-                    <div className='flex'>
+                <div className='py-5' style={{ background: '#3282AD' }}>
+                    <h1 className='text-center text-white text-2xl font-bold'>Contact Us</h1>
+                    <p className='text-center text-white'>Any question or remarks? Just write us a message!</p>
+                    <div className='flex justify-between m-10' >
                         <div>
-                            <IoMdContact></IoMdContact>
-                            <p>1901 Thornridge Cir. Shiloh
+                            <IoMdContact className='rounded-full ml-16 text-white'></IoMdContact>
+                            <p className='text-white'>1901 Thornridge Cir. <br />Shiloh
                                 Hawaii 81063</p>
                         </div>
                         <div>
-                            <FaPhoneSquareAlt></FaPhoneSquareAlt>
-                            <p>+91-4555545454</p>
+                            <FaPhoneSquareAlt className='rounded-full ml-14 text-white'></FaPhoneSquareAlt>
+                            <p className='text-white'>+91-4555545454</p>
                         </div>
                         <div>
-                            <MdOutlineForwardToInbox></MdOutlineForwardToInbox>
-                            <p>tim.jennings@example.com</p>
+                            <MdOutlineForwardToInbox className='rounded-full ml-20 text-white'></MdOutlineForwardToInbox>
+                            <p className='text-white'>tim.jennings@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className="hero bg-base-200">
+                        <div className="hero-content flex-col lg:flex-row">
+                            <img src={img3} alt='' className="max-w-sm rounded-lg shadow-2xl" />
+                            <div className="card flex-shrink-0 w-full max-w-sm">
+                                <div className="card-body">
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text uppercase">First Name</span>
+                                        </label>
+                                        <input type="text" placeholder="" className="input input-bordered" />
+                                    </div>
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text uppercase">Last Name</span>
+                                        </label>
+                                        <input type="text" placeholder="" className="input input-bordered" />
+                                    </div>
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text uppercase">Email</span>
+                                        </label>
+                                        <input type="text" placeholder="" className="input input-bordered" />
+                                    </div>
+                                    <div className="form-control">
+                                        <textarea className="textarea textarea-bordered p-10" placeholder="Leave a message for us"></textarea>
+                                    </div>
+                                    <button className="text-white py-2 font-medium" style={{ border: '2px solid #3282AD', background: '#3282AD' }}>Submit</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
