@@ -4,11 +4,11 @@ import img2 from '../../../assets/book-plane.png';
 
 const Booking = () => {
     return (
-        <div style={{ background: 'linear-gradient(180deg, #E5F8FE 14.25%, rgba(255, 255, 255, 0) 100%)' }}>
-            <img src={img2} alt="" className='ml-20' style={{ background: "#E5F8FE" }} />
+        <div className='mb-16' style={{ background: 'linear-gradient(180deg, #E5F8FE 14.25%, rgba(255, 255, 255, 0) 100%)' }}>
+            <img src={img2} alt="" className='lg:ml-20' style={{ background: "#E5F8FE" }} />
             <div className="hero">
-                <div className="hero-content flex-col lg:flex-row">
-                    <img src={img1} alt='' className="max-w-sm h-80 rounded-lg" />
+                <div className="hero-content flex-col-reverse lg:flex-row">
+                    <img src={img1} alt='' className="w-56 lg:w-full lg:h-80 rounded-lg" />
                     <div className="card flex-shrink-0 w-full max-w-sm">
                         <div className="card-body">
                             <div className="form-control">
