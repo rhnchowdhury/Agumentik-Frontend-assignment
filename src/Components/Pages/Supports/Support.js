@@ -9,16 +9,16 @@ import { MdOutlineForwardToInbox } from "react-icons/md";
 
 const Support = () => {
     return (
-        <div>
-            <img src={img1} alt="" />
-            <div>
+        <div style={{ background: 'linear-gradient(180deg, #E5F8FE 14.25%, rgba(255, 255, 255, 0) 100%)' }} >
+            <img src={img1} alt="" className='lg:ml-44' />
+            <div className='mt-10'>
                 <h1 className='text-center text-2xl font-bold'>Frequently asked questions</h1>
                 <p className='text-center'>Have questions ? We’re here to help.</p>
                 <span className='card-actions justify-center mt-8'>
-                    <input type="text" placeholder="Search a Question" className="input input-bordered w-full max-w-xs" />
+                    <input type="text" placeholder="Search a Question" className="input input-bordered lg:w-full max-w-xs" />
                     <button className='p-4 text-white -ml-5' style={{ background: '#3282AD' }}><BiSearch></BiSearch> </button>
                 </span>
-                <div>
+                <div className='m-7 lg:m-10'>
                     <div tabIndex={0} className="collapse collapse-plus collapse-open border border-base-300 bg-base-100 rounded-box">
                         <div className="collapse-title text-xl font-medium">
                             What is the most popular season to visit the Maldives?
@@ -48,8 +48,8 @@ const Support = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="hero bg-base-200">
+                <div className='m-10'>
+                    <div className="hero" style={{ backgroundColor: '#F6FDFF' }}>
                         <div className="hero-content flex-col lg:flex-row-reverse">
                             <img src={img2} alt='' className="max-w-sm mask mask-circle" />
                             <div>
@@ -63,51 +63,50 @@ const Support = () => {
                 <div className='py-5' style={{ background: '#3282AD' }}>
                     <h1 className='text-center text-white text-2xl font-bold'>Contact Us</h1>
                     <p className='text-center text-white'>Any question or remarks? Just write us a message!</p>
-                    <div className='flex justify-between m-10' >
+                    <div className='grid gap-5 grid-cols-1 lg:grid-cols-3 m-5 lg:m-10' >
                         <div>
                             <IoMdContact className='rounded-full ml-16 text-white'></IoMdContact>
-                            <p className='text-white'>1901 Thornridge Cir. <br />Shiloh
+                            <p className='text-white mt-2'>1901 Thornridge Cir. <br />Shiloh
                                 Hawaii 81063</p>
                         </div>
                         <div>
-                            <FaPhoneSquareAlt className='rounded-full ml-14 text-white'></FaPhoneSquareAlt>
-                            <p className='text-white'>+91-4555545454</p>
+                            <FaPhoneSquareAlt className='rounded-full ml-16 lg:ml-14 text-white'></FaPhoneSquareAlt>
+                            <p className='text-white mt-2'>+91-4555545454</p>
                         </div>
                         <div>
-                            <MdOutlineForwardToInbox className='rounded-full ml-20 text-white'></MdOutlineForwardToInbox>
-                            <p className='text-white'>tim.jennings@example.com</p>
+                            <MdOutlineForwardToInbox className='rounded-full ml-16 lg:ml-20 text-white'></MdOutlineForwardToInbox>
+                            <p className='text-white mt-2'>tim.jennings@example.com</p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="hero bg-base-200">
-                        <div className="hero-content flex-col lg:flex-row">
-                            <img src={img3} alt='' className="max-w-sm rounded-lg shadow-2xl" />
-                            <div className="card flex-shrink-0 w-full max-w-sm">
-                                <div className="card-body">
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text uppercase">First Name</span>
-                                        </label>
-                                        <input type="text" placeholder="" className="input input-bordered" />
-                                    </div>
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text uppercase">Last Name</span>
-                                        </label>
-                                        <input type="text" placeholder="" className="input input-bordered" />
-                                    </div>
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text uppercase">Email</span>
-                                        </label>
-                                        <input type="text" placeholder="" className="input input-bordered" />
-                                    </div>
-                                    <div className="form-control">
-                                        <textarea className="textarea textarea-bordered p-10" placeholder="Leave a message for us"></textarea>
-                                    </div>
-                                    <button className="text-white py-2 font-medium" style={{ border: '2px solid #3282AD', background: '#3282AD' }}>Submit</button>
+
+                <div className="hero">
+                    <div className="hero-content flex-col-reverse lg:flex-row">
+                        <img src={img3} alt='' className="w-56 lg:w-full max-w-sm rounded-lg" />
+                        <div className="card flex-shrink-0 w-full max-w-sm">
+                            <div className="card-body">
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text uppercase">First Name</span>
+                                    </label>
+                                    <input type="text" placeholder="" className="input input-bordered" />
                                 </div>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text uppercase">Last Name</span>
+                                    </label>
+                                    <input type="text" placeholder="" className="input input-bordered" />
+                                </div>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text uppercase">Email</span>
+                                    </label>
+                                    <input type="text" placeholder="" className="input input-bordered" />
+                                </div>
+                                <div className="form-control">
+                                    <textarea className="textarea textarea-bordered p-10" placeholder="Leave a message for us"></textarea>
+                                </div>
+                                <button className="text-white py-2 font-medium" style={{ border: '2px solid #3282AD', background: '#3282AD' }}>Submit</button>
                             </div>
                         </div>
                     </div>
