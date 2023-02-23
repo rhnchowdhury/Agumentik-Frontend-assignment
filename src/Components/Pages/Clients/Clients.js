@@ -10,7 +10,7 @@ const Clients = () => {
         <div className='m-10'>
             <h1 className='text-center text-2xl font-bold'>What Our Clients Says <br /> About Us</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5'>
-                <div className="card w-96 shadow-2xl">
+                <div className="card lg:w-96 shadow-2xl">
                     <figure className="mt-5">
                         <img src={img1} alt="Shoes" className="w-24 rounded-full" />
                     </figure>
@@ -27,7 +27,7 @@ const Clients = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 shadow-2xl">
+                <div className="card lg:w-96 shadow-2xl">
                     <figure className="mt-5">
                         <img src={img2} alt="Shoes" className="w-24 rounded-full" />
                     </figure>
@@ -44,7 +44,7 @@ const Clients = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 shadow-2xl">
+                <div className="card lg:w-96 shadow-2xl">
                     <figure className="mt-5">
                         <img src={img3} alt="Shoes" className="w-24 rounded-full" />
                     </figure>

@@ -6,7 +6,7 @@ import img2 from '../../../assets/phn.png';
 const Footer = () => {
     return (
         <div>
-            <img src={img2} alt="" className='-mb-16 h-60 ml-10 w-11/12' />
+            <img src={img2} alt="" className='-mb-10 lg:-mb-16 lg:h-60 max-h-sm ml-3 lg:ml-10 w-11/12 ' />
             <footer className="footer p-10 py-24 text-base-content" style={{ background: '#41A5C1' }}>
                 <div>
                     <img src={img1} alt="" width='50' height='50' />
