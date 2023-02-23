@@ -12,7 +12,7 @@ const NavBar = () => {
         </Link></li>
         <li><Link>About Us</Link></li>
         <li><Link>Gol</Link></li>
-        <li><Link>Support</Link></li>
+        <li><Link to='/support'>Support</Link></li>
     </React.Fragment>
     return (
         <div>
